@@ -5,7 +5,7 @@ The DattoRmmApi module was built to make the Datto RMM API readily accessible. T
 
 Make sure you have set up an API key for your user account in datto and know what your platform is (see [here](https://help.aem.autotask.net/en/Content/2SETUP/APIv2.htm) for instructions).
 
-Install and import the powershell module from the powershell gallery with the commands 
+Install and import the [PowerShell module from the PowerShell gallery](https://www.powershellgallery.com/packages/DattoRmmApi/) with the commands 
 
 ```powershell
 Install-Module DattoRmmApi
