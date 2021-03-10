@@ -27,6 +27,64 @@ You can test things out by running
 Get-RmmAccountData
 ```
 
+# What is available
+Check out [the REST API explorer](https://zinfandel-api.centrastage.net/api/swagger-ui.html) for the structure, and go to our [documentation](for implementation details).
+
+Click to list all of the cmdlets
+<details>
+    <summary>Click to list all of the cmdlets</summary>
+    ## Account
+    [Get-RmmAccountData](https://github.com/pncit/DattoRmmApi/blob/main/docs/account.md#Get-RmmAccountData)
+    [Get-RmmAccountVariables](https://github.com/pncit/DattoRmmApi/blob/main/docs/account.md#Get-RmmAccountVariables)
+    [Get-RmmComponents](https://github.com/pncit/DattoRmmApi/blob/main/docs/account.md#Get-RmmComponents)
+    [Get-RmmDevices](https://github.com/pncit/DattoRmmApi/blob/main/docs/account.md#Get-RmmDevices)
+    [Get-RmmOpenAlerts](https://github.com/pncit/DattoRmmApi/blob/main/docs/account.md#Get-RmmOpenAlerts)
+    [Get-RmmResolvedAlerts](https://github.com/pncit/DattoRmmApi/blob/main/docs/account.md#Get-RmmResolvedAlerts)
+    [Get-RmmSites](https://github.com/pncit/DattoRmmApi/blob/main/docs/account.md#Get-RmmSites)
+    [Get-RmmUsers](https://github.com/pncit/DattoRmmApi/blob/main/docs/account.md#Get-RmmUsers)
+    [New-RmmAccountVariable](https://github.com/pncit/DattoRmmApi/blob/main/docs/account.md#New-RmmAccountVariable)
+    [Remove-RmmAccountVariable](https://github.com/pncit/DattoRmmApi/blob/main/docs/account.md#Remove-RmmAccountVariable)
+    [Set-RmmAccountVariable](https://github.com/pncit/DattoRmmApi/blob/main/docs/account.md#Set-RmmAccountVariable)
+
+    ## Alerts
+    [Get-RmmAlert](https://github.com/pncit/DattoRmmApi/blob/main/docs/alerts.md#Get-RmmAlert)
+    [Set-RmmAlertResolved](https://github.com/pncit/DattoRmmApi/blob/main/docs/alerts.md#Set-RmmAlertResolved)
+
+    ## Audit
+    [Get-RmmDeviceAuditData](https://github.com/pncit/DattoRmmApi/blob/main/docs/audit.md#Get-RmmDeviceAuditData)
+    [Get-RmmDeviceSoftwareAuditData](https://github.com/pncit/DattoRmmApi/blob/main/docs/audit.md#Get-RmmDeviceSoftwareAuditData)
+    [Get-RmmEsxiHostAuditData](https://github.com/pncit/DattoRmmApi/blob/main/docs/audit.md#Get-RmmEsxiHostAuditData)
+    [Get-RmmPrinterAuditData](https://github.com/pncit/DattoRmmApi/blob/main/docs/audit.md#Get-RmmPrinterAuditData)
+
+    ## Device
+    [Get-RmmDevice](https://github.com/pncit/DattoRmmApi/blob/main/docs/device.md#Get-RmmDevice)
+    [Get-RmmDeviceById](https://github.com/pncit/DattoRmmApi/blob/main/docs/device.md#Get-RmmDeviceById)
+    [Get-RmmDeviceOpenAlerts](https://github.com/pncit/DattoRmmApi/blob/main/docs/device.md#Get-RmmDeviceOpenAlerts)
+    [Get-RmmDeviceResolvedAlerts](https://github.com/pncit/DattoRmmApi/blob/main/docs/device.md#Get-RmmDeviceResolvedAlerts)
+    [Move-RmmDevice](https://github.com/pncit/DattoRmmApi/blob/main/docs/device.md#Move-RmmDevice)
+    [New-RmmDeviceQuickJob](https://github.com/pncit/DattoRmmApi/blob/main/docs/device.md#New-RmmDeviceQuickJob)
+    [Set-RmmDeviceUdf](https://github.com/pncit/DattoRmmApi/blob/main/docs/device.md#Set-RmmDeviceUdf)
+    [Set-RmmDeviceWarranty](https://github.com/pncit/DattoRmmApi/blob/main/docs/device.md#Set-RmmDeviceWarranty)
+
+    ## Job
+    [Get-RmmJob](https://github.com/pncit/DattoRmmApi/blob/main/docs/job.md#Get-RmmJob)
+    [Get-RmmJobComponents](https://github.com/pncit/DattoRmmApi/blob/main/docs/job.md#Get-RmmJobComponents)
+
+    [Get-RmmSite](https://github.com/pncit/DattoRmmApi/blob/main/docs/sites.md#Get-RmmSite)
+    [Get-RmmSiteDevices](https://github.com/pncit/DattoRmmApi/blob/main/docs/sites.md#Get-RmmSiteDevices)
+    [Get-RmmSiteOpenAlerts](https://github.com/pncit/DattoRmmApi/blob/main/docs/sites.md#Get-RmmSiteOpenAlerts)
+    [Get-RmmSiteResolvedAlerts](https://github.com/pncit/DattoRmmApi/blob/main/docs/sites.md#Get-RmmSiteResolvedAlerts)
+    [Get-RmmSiteSettings](https://github.com/pncit/DattoRmmApi/blob/main/docs/sites.md#Get-RmmSiteSettings)
+    [Get-RmmSiteVariables](https://github.com/pncit/DattoRmmApi/blob/main/docs/sites.md#Get-RmmSiteVariables)
+    [New-RmmSite](https://github.com/pncit/DattoRmmApi/blob/main/docs/sites.md#New-RmmSite)
+    [New-RmmSiteVariable](https://github.com/pncit/DattoRmmApi/blob/main/docs/sites.md#Get-RmmSiteVariable)
+    [Remove-RmmSiteProxy](https://github.com/pncit/DattoRmmApi/blob/main/docs/sites.md#Remove-RmmSiteProxy)
+    [Remove-RmmSiteVariable](https://github.com/pncit/DattoRmmApi/blob/main/docs/sites.md#Remove-RmmSiteVariable)
+    [Set-RmmSite](https://github.com/pncit/DattoRmmApi/blob/main/docs/sites.md#Set-RmmSite)
+    [Set-RmmSiteProxy](https://github.com/pncit/DattoRmmApi/blob/main/docs/sites.md#Set-RmmSiteProxy)
+    [Set-RmmSiteVariable](https://github.com/pncit/DattoRmmApi/blob/main/docs/sites.md#Set-RmmSiteVariable)
+
+</details>
 # Some ideas
 - Store your platform, access key, and **masked** secret key as account variables so you can use the API from within Datto components.
 - Monitors in Datto RMM cannot interact with UDFs in real-time - unless you use the API! To get a UDF for the device a component is running on:
