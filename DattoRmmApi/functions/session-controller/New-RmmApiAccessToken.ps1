@@ -1,4 +1,4 @@
-function New-RmmAccessToken {
+function New-RmmApiAccessToken {
     <#
     .SYNOPSIS 
     Generates a new Datto RMM API Access Token
