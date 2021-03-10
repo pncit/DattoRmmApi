@@ -10,10 +10,10 @@ function Set-RmmDeviceWarranty {
     Uid of the device
 
     .PARAMETER warrantyDate
-    Warranty date as string
+    Warranty date as string in yyyy-mm-dd format
 
     .EXAMPLE
-    Set-RmmDeviceWarranty -deviceUid '6bcc7737-61ed-4cd9-bf91-26be42401c62' -warrantyDate '2021/01/23'
+    Set-RmmDeviceWarranty -deviceUid '6bcc7737-61ed-4cd9-bf91-26be42401c62' -warrantyDate '2021-01-23'
     #>
 
     param 
@@ -23,6 +23,10 @@ function Set-RmmDeviceWarranty {
         [parameter(Mandatory=$true)]
         [string]$warrantyDate
     )
+
+    if ( $warrantyDate -notmatch '^\d{4}\-(0[1-9]|1[012])\-(0[1-9]|[12][0-9]|3[01])$' ) {
+        throw ( 'Warranty date must be in yyyy-mm-dd format.' )
+    }
 
     $requestBody = @{}
     $requestBody.Add('deviceUid',$deviceUid)
