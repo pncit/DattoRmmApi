@@ -37,5 +37,5 @@ function Set-RmmSiteVariable {
     $requestBody.Add( 'name',$name )
     $requestBody.Add( 'value',$value )
 
-    New-RmmApiRequest -method PUT -endpoint "site/$siteUid/variable/$variableId" -requestBody ( $requestBody | ConvertTo-Json )
+    New-RmmApiRequest -method POST -endpoint "site/$siteUid/variable/$variableId" -requestBody ( $requestBody | ConvertTo-Json )
 }
