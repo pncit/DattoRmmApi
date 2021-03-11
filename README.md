@@ -28,7 +28,7 @@ Get-RmmAccountData
 ```
 
 # What is available
-Check out [the REST API explorer](https://zinfandel-api.centrastage.net/api/swagger-ui.html) for the structure, and go to our [documentation](for implementation details).
+Check out [the REST API explorer](https://zinfandel-api.centrastage.net/api/swagger-ui.html) for the structure, and go to our [documentation](https://github.com/pncit/DattoRmmApi/blob/main/docs/) for usage details.
 You can also use the Get-Help cmdlet in PowerShell to get details about any cmdlet:
 ```powershell
 Get-Help Get-RmmAccountData
