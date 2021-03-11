@@ -18,7 +18,6 @@ function New-RmmAccountVariable {
     .EXAMPLE
     New-RmmAccountVariable -name "foo" -value "bar"
     New-RmmAccountVariable -name "foo" -value "bar" -masked
-
     #>
 
     Param (

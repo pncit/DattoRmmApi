@@ -11,7 +11,6 @@ function Remove-RmmSiteProxy {
 
     .EXAMPLE
     Remove-RmmSiteProxy -siteUid '6bcc7737-61ed-4cd9-bf91-26be42401c62'
-
     #>
 
     Param (

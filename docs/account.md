@@ -53,7 +53,7 @@ $accountData = Get-RmmAccountData
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Object] PSCustomObject containing account data
 ## NOTES
 
 ## RELATED LINKS
@@ -88,7 +88,7 @@ $accountVariables = Get-RmmAccountVariables
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Array] Object containing variable data
 ## NOTES
 
 ## RELATED LINKS
@@ -123,7 +123,7 @@ $components = Get-RmmComponents
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Array] Object containing component data
 ## NOTES
 
 ## RELATED LINKS
@@ -158,7 +158,7 @@ $devices = Get-RmmDevices
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Array] Object containing device data
 ## NOTES
 
 ## RELATED LINKS
@@ -193,7 +193,7 @@ $openAlerts = Get-RmmOpenAlerts
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Array] Object containing alert data
 ## NOTES
 
 ## RELATED LINKS
@@ -228,7 +228,7 @@ $resolvedAlerts = Get-RmmResolvedAlerts
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Array] Object containing alert data
 ## NOTES
 
 ## RELATED LINKS
@@ -263,7 +263,7 @@ $sites = Get-RmmSites
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Array] Object containing site data
 ## NOTES
 
 ## RELATED LINKS
@@ -298,7 +298,7 @@ $users = Get-RmmUsers
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Array] Object containing user data
 ## NOTES
 
 ## RELATED LINKS

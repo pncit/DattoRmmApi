@@ -7,11 +7,10 @@ function Get-RmmUsers {
     Fetches the authentication users records of the authenticated user's account.
 
     .OUTPUTS
-    [System.Object] custom object containing request response data
+    [System.Array] Object containing user data
 
     .EXAMPLE
     $users = Get-RmmUsers
-
     #>
 
     return New-RmmApiRequest -method GET -endpoint 'account/users'

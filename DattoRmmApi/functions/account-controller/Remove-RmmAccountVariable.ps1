@@ -11,7 +11,6 @@ function Remove-RmmAccountVariable {
     
     .EXAMPLE
     Remove-RmmAccountVariable -variableId 012345
-
     #>
 
     Param (

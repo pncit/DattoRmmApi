@@ -10,7 +10,7 @@ function Get-RmmDeviceById {
     Id of the device
 
     .OUTPUTS
-    [System.Object] custom object containing request response data
+    [System.Object] PSCustomObject containing device data
 
     .EXAMPLE
     $device = Get-RmmDevice -deviceId '012345'

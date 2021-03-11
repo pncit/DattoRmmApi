@@ -10,7 +10,7 @@ function Get-RmmAlert {
     Uid of the alert to query
 
     .OUTPUTS
-    [System.Object] custom object containing request response data
+    [System.Object] PSCustomObject containing alert data
 
     .EXAMPLE
     $alertInfo = Get-RmmAlert -alertUid '6bcc7737-61ed-4cd9-bf91-26be42401c62'

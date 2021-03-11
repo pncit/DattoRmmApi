@@ -53,7 +53,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Object] PSCustomObject containing job data
 ## NOTES
 
 ## RELATED LINKS
@@ -106,7 +106,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Object] PSCustomObject containing job component data
 ## NOTES
 
 ## RELATED LINKS

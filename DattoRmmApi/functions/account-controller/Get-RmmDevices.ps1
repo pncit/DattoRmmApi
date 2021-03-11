@@ -7,11 +7,10 @@ function Get-RmmDevices {
     Fetches the devices of the authenticated user's account
 
     .OUTPUTS
-    [System.Object] custom object containing request response data
+    [System.Array] Object containing device data
 
     .EXAMPLE
     $devices = Get-RmmDevices
-
     #>
 
     return New-RmmApiRequest -method GET -endpoint 'account/devices'

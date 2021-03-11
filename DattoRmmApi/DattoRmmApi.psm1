@@ -1,4 +1,4 @@
-$Sources  = @(Get-ChildItem -Path $PSScriptRoot\functions\*\*.ps1 -ErrorAction SilentlyContinue)
+$Sources = @(Get-ChildItem -Path $PSScriptRoot\functions\*\*.ps1 -ErrorAction SilentlyContinue)
 foreach ($Source in @($Sources))
 {
     try {

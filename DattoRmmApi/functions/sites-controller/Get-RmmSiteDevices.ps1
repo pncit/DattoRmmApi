@@ -10,7 +10,7 @@ function Get-RmmSiteDevices {
     Uid of the site
 
     .OUTPUTS
-    [System.Object] custom object containing request response data
+    [System.Array] Object containing device data
 
     .EXAMPLE
     $devices = Get-RmmSiteDevices -siteUid '6bcc7737-61ed-4cd9-bf91-26be42401c62'

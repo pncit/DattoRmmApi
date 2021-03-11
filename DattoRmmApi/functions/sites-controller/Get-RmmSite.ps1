@@ -10,11 +10,10 @@ function Get-RmmSite {
     Uid of the site
 
     .OUTPUTS
-    [System.Object] custom object containing request response data
+    [System.Object] PSCustomObject containing site data
 
     .EXAMPLE
     $site = Get-RmmSite -siteUid '6bcc7737-61ed-4cd9-bf91-26be42401c62'
-
     #>
 
     param 

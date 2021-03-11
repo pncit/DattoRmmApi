@@ -4,7 +4,7 @@ function Move-RmmDevice {
     Moves a device to a new site
 
     .DESCRIPTION
-    Moves a device from one site to another site
+    Moves a device with the specified device uid to a site with the specified site uid
 
     .PARAMETER deviceUid
     Uid of the device

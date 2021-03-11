@@ -21,7 +21,6 @@ function New-RmmSiteVariable {
     .EXAMPLE
     New-RmmSiteVariable -siteUid '6bcc7737-61ed-4cd9-bf91-26be42401c62' -name "foo" -value "bar"
     New-RmmSiteVariable -siteUid '6bcc7737-61ed-4cd9-bf91-26be42401c62' -name "foo" -value "bar" -masked
-
     #>
 
     Param (

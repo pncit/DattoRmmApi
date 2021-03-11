@@ -10,7 +10,7 @@ function Get-RmmSiteOpenAlerts {
     Uid of the site
 
     .OUTPUTS
-    [System.Object] custom object containing request response data
+    [System.Array] Object containing alert data
 
     .EXAMPLE
     $site = Get-RmmSiteOpenAlerts -siteUid '6bcc7737-61ed-4cd9-bf91-26be42401c62'

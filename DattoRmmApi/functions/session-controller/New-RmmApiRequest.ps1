@@ -18,11 +18,10 @@ function New-RmmApiRequest {
     json-formatted body for POST or PUT requests
 
     .OUTPUTS
-    [System.Object] custom object containing request response data
+    Response data as System.Object or System.Array
 
     .EXAMPLE
     $response = New-RmmApiRequest -method GET -endpoint "account/variables"
-
     #>
     param 
     (

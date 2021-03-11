@@ -38,7 +38,6 @@ function New-RmmSite {
 
     .EXAMPLE
     $newSite = New-RmmSite -name "foo" -onDemand
-
     #>
 
     Param (

@@ -21,12 +21,8 @@ function Start-RmmApiSession {
     .PARAMETER secretKey
     User-specific Secret Key/API Secret Key
 
-    .OUTPUTS
-    None
-
     .EXAMPLE
     Start-RmmApiSession -platform "zinfandel" -accessKey "01234" -secretKey "abcde"
-
     #>
     param 
     (

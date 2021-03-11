@@ -7,11 +7,10 @@ function Get-RmmComponents {
     Fetches the components records of the authenticated user's account
 
     .OUTPUTS
-    [System.Object] custom object containing request response data
+    [System.Array] Object containing component data
 
     .EXAMPLE
     $components = Get-RmmComponents
-
     #>
 
     return New-RmmApiRequest -method GET -endpoint 'account/components'

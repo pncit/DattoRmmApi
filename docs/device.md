@@ -65,7 +65,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Object] PSCustomObject containing device data
 ## NOTES
 
 ## RELATED LINKS
@@ -118,7 +118,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Object] PSCustomObject containing device data
 ## NOTES
 
 ## RELATED LINKS
@@ -171,7 +171,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Array] Object containing alert data
 ## NOTES
 
 ## RELATED LINKS
@@ -224,7 +224,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Array] Object containing alert data
 ## NOTES
 
 ## RELATED LINKS
@@ -244,7 +244,7 @@ Move-RmmDevice [-deviceUid] <String> [-siteUid] <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Moves a device from one site to another site
+Moves a device with the specified device uid to a site with the specified site uid
 
 ## EXAMPLES
 
@@ -390,7 +390,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Object] custom object containing job data
 ## NOTES
 
 ## RELATED LINKS
@@ -926,7 +926,7 @@ Sets the warranty of a device identified by the given device Uid
 
 ### EXAMPLE 1
 ```
-Set-RmmDeviceWarranty -deviceUid '6bcc7737-61ed-4cd9-bf91-26be42401c62' -warrantyDate '2021/01/23'
+Set-RmmDeviceWarranty -deviceUid '6bcc7737-61ed-4cd9-bf91-26be42401c62' -warrantyDate '2021-01-23'
 ```
 
 ## PARAMETERS
@@ -947,7 +947,7 @@ Accept wildcard characters: False
 ```
 
 ### -warrantyDate
-Warranty date as string
+Warranty date as a string in yyyy-mm-dd format
 
 ```yaml
 Type: String

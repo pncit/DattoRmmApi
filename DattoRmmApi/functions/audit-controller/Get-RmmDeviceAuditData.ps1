@@ -10,7 +10,7 @@ function Get-RmmDeviceAuditData {
     Uid of the device
 
     .OUTPUTS
-    [System.Object] custom object containing request response data
+    [System.Object] PSCustomObject containing device data
 
     .EXAMPLE
     $deviceAuditData = Get-RmmDeviceAuditData -deviceUid '6bcc7737-61ed-4cd9-bf91-26be42401c62'

@@ -10,7 +10,7 @@ function Get-RmmJob {
     Uid of the job
 
     .OUTPUTS
-    [System.Object] custom object containing request response data
+    [System.Object] PSCustomObject containing job data
 
     .EXAMPLE
     $job = Get-RmmJob -jobUid '6bcc7737-61ed-4cd9-bf91-26be42401c62'

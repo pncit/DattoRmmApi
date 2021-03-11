@@ -11,7 +11,7 @@ function Set-RmmDeviceUdf {
     Uid of the device
 
     .PARAMETER udf1-udf30
-    Udfs to define.
+    UDFs to define.
 
     .EXAMPLE
     Set-RmmDeviceUdf -deviceUid '6bcc7737-61ed-4cd9-bf91-26be42401c62' -udf10 "foo" -udf15 "bar" -udf25 ""

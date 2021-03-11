@@ -11,7 +11,6 @@ function Set-RmmAccountVariable {
     
     .EXAMPLE
     Set-RmmAccountVariable -variableId 012345 -name "foo" -value "bar"
-
     #>
 
     Param (

@@ -75,7 +75,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Object] PSCustomObject containing site data
 ## NOTES
 
 ## RELATED LINKS
@@ -128,7 +128,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Array] Object containing device data
 ## NOTES
 
 ## RELATED LINKS
@@ -181,7 +181,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Array] Object containing alert data
 ## NOTES
 
 ## RELATED LINKS
@@ -234,7 +234,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Array] Object containing alert data
 ## NOTES
 
 ## RELATED LINKS
@@ -287,7 +287,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Object] PSCustomObject containing settings data
 ## NOTES
 
 ## RELATED LINKS
@@ -340,7 +340,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### [System.Object] custom object containing request response data
+### [System.Array] Object containing variable data
 ## NOTES
 
 ## RELATED LINKS
@@ -691,7 +691,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 # Remove-RmmSiteVariable
 
 ## SYNOPSIS
-Deletes a site-level variable
+Removes a site-level variable
 
 ## SYNTAX
 
@@ -700,7 +700,7 @@ Remove-RmmSiteVariable [-siteUid] <String> [-variableId] <String> [<CommonParame
 ```
 
 ## DESCRIPTION
-Deletes the site variable identified by the given site Uid and variable Id
+Removes the site variable identified by the given site Uid and variable Id
 
 ## EXAMPLES
 
@@ -727,7 +727,7 @@ Accept wildcard characters: False
 ```
 
 ### -variableId
-Id of the variable to delete
+Id of the variable to remove
 
 ```yaml
 Type: String
@@ -1036,7 +1036,7 @@ Set-RmmSiteVariable -siteUid '6bcc7737-61ed-4cd9-bf91-26be42401c62' -variableId 
 ## PARAMETERS
 
 ### -siteUid
-Uid of the site to add a variable to
+Uid of the site with the variable to modify
 
 ```yaml
 Type: String
@@ -1066,7 +1066,7 @@ Accept wildcard characters: False
 ```
 
 ### -name
-The name of the variable
+The name to apply to the variable
 
 ```yaml
 Type: String
@@ -1081,7 +1081,7 @@ Accept wildcard characters: False
 ```
 
 ### -value
-The value of the variable
+The value to apply to the variable
 
 ```yaml
 Type: String

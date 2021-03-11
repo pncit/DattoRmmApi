@@ -10,7 +10,7 @@ function Set-RmmDeviceWarranty {
     Uid of the device
 
     .PARAMETER warrantyDate
-    Warranty date as string in yyyy-mm-dd format
+    Warranty date as a string in yyyy-mm-dd format
 
     .EXAMPLE
     Set-RmmDeviceWarranty -deviceUid '6bcc7737-61ed-4cd9-bf91-26be42401c62' -warrantyDate '2021-01-23'

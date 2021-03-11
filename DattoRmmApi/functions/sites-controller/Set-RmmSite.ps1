@@ -26,7 +26,6 @@ function Set-RmmSite {
 
     .EXAMPLE
     $newSite = Set-RmmSite -siteUid '6bcc7737-61ed-4cd9-bf91-26be42401c62' -name "foo" -onDemand
-
     #>
 
     Param (

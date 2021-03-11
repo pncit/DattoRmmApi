@@ -7,11 +7,10 @@ function Get-RmmOpenAlerts {
     Fetches open alerts of the authenticated user's account
 
     .OUTPUTS
-    [System.Object] custom object containing request response data
+    [System.Array] Object containing alert data
 
     .EXAMPLE
     $openAlerts = Get-RmmOpenAlerts
-
     #>
 
     return New-RmmApiRequest -method GET -endpoint 'account/alerts/open'

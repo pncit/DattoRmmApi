@@ -1,16 +1,16 @@
 function Remove-RmmSiteVariable {
     <#
     .SYNOPSIS 
-    Deletes a site-level variable
+    Removes a site-level variable
 
     .DESCRIPTION
-    Deletes the site variable identified by the given site Uid and variable Id
+    Removes the site variable identified by the given site Uid and variable Id
     
     .PARAMETER siteUid
     Uid of the site to remove the variable from
 
     .PARAMETER variableId
-    Id of the variable to delete
+    Id of the variable to remove
     
     .EXAMPLE
     Remove-RmmSiteVariable -siteUid '6bcc7737-61ed-4cd9-bf91-26be42401c62' -variableId 01234

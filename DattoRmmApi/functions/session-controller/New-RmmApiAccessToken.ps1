@@ -21,6 +21,7 @@ function New-RmmApiAccessToken {
     .NOTES
     This is not built to be executed on its own and assumes that the script-level variable $rmmApiUrl has been defined.
     #>
+    
 	param
 	(
         [parameter(mandatory=$true)]

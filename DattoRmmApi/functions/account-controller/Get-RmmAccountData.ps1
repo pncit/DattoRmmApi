@@ -7,11 +7,10 @@ function Get-RmmAccountData {
     Fetches the authenticated user's account data
 
     .OUTPUTS
-    [System.Object] custom object containing request response data
+    [System.Object] PSCustomObject containing account data
 
     .EXAMPLE
     $accountData = Get-RmmAccountData
-
     #>
 
     return New-RmmApiRequest -method GET -endpoint 'account'
