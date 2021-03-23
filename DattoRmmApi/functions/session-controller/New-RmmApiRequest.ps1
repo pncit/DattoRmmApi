@@ -42,6 +42,11 @@ function New-RmmApiRequest {
         throw ( 'In order to use the DattoRmmApi PowerShell Module, you must first run Start-RmmApiSession.
         See https://github.com/pncit/DattoRmmApi/blob/main/README.md for more information.' )
     }
+
+    Write-Debug -Message "Method: $method"
+    Write-Debug -Message "Endpoint: $endpoint"
+    Write-Debug -Message "RequestBody: $requestBody"
+
     # some calls will just use the endpoint to add to the base $apiUrl (e.g. 'account/devices'), other calls
     # will include the entire uri (e.g. when using nextPageUrl or prevPageUrl)
     if ( $endpoint.Substring(0,[math]::min($endpoint.Length,$script:rmmApiUrl.Length)) -eq $script:rmmApiUrl ) {
@@ -49,6 +54,8 @@ function New-RmmApiRequest {
     } else {
         $uri = "$script:rmmApiUrl/$endpoint"
     }
+
+    Write-Debug -Message "Uri: $uri"
 
     #set the parameters for the request
     $params = @{
