@@ -10,7 +10,7 @@ function New-RmmDeviceQuickJob {
     [System.Object] custom object containing job data
 
     .EXAMPLE
-    $response = New-DeviceQuickJob -deviceUid '6bcc7737-61ed-4cd9-bf91-26be42401c62' -jobName "foo" -componentUid '6bcc7737-61ed-4cd9-bf91-26be42401c62' -variables @{"bar"="baz","qux"="quux"}
+    $response = New-DeviceQuickJob -deviceUid '6bcc7737-61ed-4cd9-bf91-26be42401c62' -jobName "foo" -componentUid '6bcc7737-61ed-4cd9-bf91-26be42401c62' -variables @{"bar"="baz";"qux"="quux"}
     #>
 
     Param (
@@ -24,12 +24,24 @@ function New-RmmDeviceQuickJob {
         [hashtable]$variables
     )
 
+    #convert variable data from hashtable to array that can be converted to API-compatible JSON object
+    $variablesArray = @()
+    foreach ( $Key in $variables.Keys ) {
+        $temp = @{
+            "name" = $Key
+            "value" = $variables[$Key]
+        }
+        $variablesArray += $temp
+    }
+
+    #build request body
     $requestBody = @{}
     $jobComponent = @{}
     $requestBody.Add( 'jobName' , $jobName )
     $jobComponent.Add( 'componentUid' , $componentUid )
-    $jobComponent.Add( 'variables' , $variables )
+    $jobComponent.Add( 'variables' , $variablesArray )
     $requestBody.Add( 'jobComponent' , $jobComponent )
 
-    return New-RmmApiRequest -method PUT -endpoint "device/$deviceUid/quickjob" -requestBody ( $requestBody | ConvertTo-Json )
+    #ConvertTo-Json must be run with Depth 3 because of variables is itself an array that needs converting
+    return New-RmmApiRequest -method PUT -endpoint "device/$deviceUid/quickjob" -requestBody ( $requestBody | ConvertTo-Json -Depth 3 )
 }
