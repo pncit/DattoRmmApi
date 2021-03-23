@@ -116,7 +116,10 @@ foreach ( $openAlert in $openAlerts ) {
 - Our password management system has an API, and that lets us programmatically sync passwords from our manager to masked site variables in Datto - no more double hop issues!
 
 # Changelog
-- 1.0.0
-    - Initial version
+- 1.1.0
+    - Fixed issue with New-RmmDeviceQuickJob
+    - Added debug code to New-RmmApiRequest
 - 1.0.1
     - Improved documentation
+- 1.0.0
+    - Initial version
