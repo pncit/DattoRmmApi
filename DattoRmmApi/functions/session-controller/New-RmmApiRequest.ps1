@@ -12,7 +12,8 @@ function New-RmmApiRequest {
 
     .PARAMETER endpoint
     Endpoint for API request.
-    For endpoint information, see Swagger links at https://help.aem.autotask.net/en/Content/2SETUP/APIv2.htm
+    For endpoint information, see Swagger links at https://zinfandel-api.centrastage.net/api/swagger-ui.html
+    Platform-specific documentation: https://[platform]-api.centrastage.net/api/swagger-ui.html
 
     .PARAMETER requestBody
     json-formatted body for POST or PUT requests
